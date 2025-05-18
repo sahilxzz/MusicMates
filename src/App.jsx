@@ -42,6 +42,8 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import EditProfile from './pages/EditProfile'
 import SpotifyConnect from './pages/SpotifyConnect'
+import About from './pages/About'
+import Contact from './pages/Contact'
 
 const App = () => {
   return (
@@ -52,7 +54,9 @@ const App = () => {
         {/* other routes */}
         <Route path="/EditProfile" element={<EditProfile />} />
         <Route path="/SpotifyConnect" element={<SpotifyConnect/>}/>
-      </Routes>
+        <Route path="/About" element={<About/>}/>
+        <Route path="/Contact" element={<Contact/>}/>
+        </Routes>
     </div>
   )
 }

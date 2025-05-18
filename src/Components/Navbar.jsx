@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { assets} from "../assets/assets";
 import { useUser, useClerk, UserButton } from "@clerk/clerk-react";
+import About from '../pages/About'
 
 const BookIcon = ()=>{
     return (
@@ -15,8 +16,8 @@ const Navbar = () => {
     const navLinks = [
         { name: 'Home', path: '/' },
         //{ name: 'Products', path: '/' },
-        { name: 'Contact', path: '/' },
-        { name: 'About', path: '/' },
+        { name: 'Contact', path: '/Contact' },
+        { name: 'About', path: '/About' },
     ];
 
     const ref = React.useRef(null)
