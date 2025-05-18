@@ -3,17 +3,19 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
-export default defineConfig({
-  base: '/MusicMates/',
-  plugins: [
-    react(),
-    tailwindcss(),
-  ],
-})
-
-// export default defineConfig(({ command }) => {
-//   return {
-//     base: command === 'build' ? '/music-mates/' : '/',
-//     plugins: [react()],
-//   }
+// export default defineConfig({
+//   base: '/MusicMates/',
+//   plugins: [
+//     react(),
+//     tailwindcss(),
+//   ],
 // })
+
+export default defineConfig(({ command }) => {
+  return {
+    base: command === 'build' ? '/music-mates/' : '/',
+    plugins: [react(),
+      tailwindcss(),
+    ],
+  }
+})
