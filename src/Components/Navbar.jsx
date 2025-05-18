@@ -2,7 +2,6 @@ import React from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { assets} from "../assets/assets";
 import { useUser, useClerk, UserButton } from "@clerk/clerk-react";
-import About from '../pages/About'
 
 const BookIcon = ()=>{
     return (
